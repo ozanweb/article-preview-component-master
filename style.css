@@ -1,0 +1,277 @@
+/* CSS reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  /* color: hsl(217, 19%, 35%);
+  color: hsl(214, 17%, 51%);
+  color: hsl(212, 23%, 69%);
+  color:  hsl(210, 46%, 95%); */
+}
+
+a {
+  display: inline-block;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Developer's Styling */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
+
+
+
+:root {
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+}
+
+html {
+
+  color: hsl(217, 19%, 35%);
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  align-items: center;
+  background-color: hsl(210, 46%, 95%);
+  min-width: 375px;
+}
+
+.article {
+  background-color: white;
+  flex: 80%;
+  min-width: 24rem;
+  max-width: 50%;
+  margin: 0 auto;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  min-height: 24rem;
+  background-image: url(/images/drawers.jpg);    
+  background-position: center center;
+  background-size: cover;
+}
+
+header {
+  /* flex: 40%; */
+}
+
+header h1 {
+  font-size: 1.2rem;
+  padding: .5rem 2rem;
+  padding-top: 2rem;
+}
+
+.paragraph {
+  flex: 40%;
+  padding: .5rem 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 20%;
+  height: 6rem;
+  overflow: hidden;
+ 
+
+}
+
+/* PROFILE/INFO CARD */
+
+.info {
+  background-color: white;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.img-box {
+  display: table-cell;
+  /* float: left; */
+ flex: 20%;
+  
+}
+
+.img-box img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.information {
+  flex: 80%;
+  line-height: 100%;
+  /* background-color: red; */
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.information p {
+  padding: .25rem 0;
+}
+
+/* SOCIAL MEDIA LINKS */
+
+.share {
+  position: absolute;
+  background-color: hsl(217, 19%, 35%);
+  width: 100%;
+  left: 200%;
+  height: 100%;
+  display: flex;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.txt {
+  color: hsl(212, 23%, 69%);
+  text-transform: uppercase;
+  letter-spacing: .25rem;
+  
+}
+
+.icons {
+  display: flex;
+  width: 70%;
+  line-height: 100%;
+  justify-content:space-evenly;
+  align-items:center;
+  padding-left: 1rem;
+}
+
+.icons li {
+  /* padding: .125rem; */
+  /* background-color: red; */
+
+}
+
+.icons a {
+  height: 1.5rem;
+  width: 1.5rem;
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  background-position: center center;
+  background-size: 90%;
+  display: block;
+  line-height: 100%;
+  padding: 1rem;
+}
+
+.fc {
+  background-image: url(images/icon-facebook.svg);
+}
+.tw {
+  background-image: url(images/icon-twitter.svg);
+}
+.pi {
+  background-image: url(images/icon-pinterest.svg);
+}
+
+/* SHARE BUTTON */
+
+.btnDiv {
+  background-color: hsl(210, 46%, 95%);
+  position: absolute;
+  right: 0;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+
+
+button[type="button"] {
+  border-radius: 50%;
+  border: none;
+  height: 2.5rem;
+  width: 2.5rem;
+  font-size: 0;
+}
+
+.btn-before {
+  background: url(images/icon-share.svg) no-repeat;
+  background-size: 50%;
+  background-position: center center;
+
+}
+
+
+.btn-after {
+  background-color: white;
+  mask-image: url(images/icon-share.svg);
+  -webkit-mask-image: url(images/icon-share.svg);
+  mask-size: 50%;
+  -webkit-mask-size: 50%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center center;
+  -webkit-mask-position: center center;
+  
+}
+
+@media screen and (min-width: 800px) {
+  :root {
+    font-size: calc(13px + .5em);
+  
+  }
+
+  .article {
+    max-width: 80%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 1rem;
+  }
+
+  .img {
+    flex: 45%;
+    background-image: url(/images/drawers.jpg);    
+    background-position: center center;
+    background-size: cover;
+    border-radius: 1rem 0 0 1rem;
+  }
+
+  .text {
+    flex: 55%;
+  }
+
+  .img-box {
+    flex: 10%;
+  }
+  
+}
+
