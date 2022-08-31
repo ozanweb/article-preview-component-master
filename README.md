@@ -54,7 +54,7 @@ When units from the elements are fetched from the DOM to use in JS functions, un
 
 ```mask-image``` which is a css property can be used to change the color of ```svg``` images.
 
-Cropping images according to their parent element size. Use the image a a background image o a box element then set the display property as 'flex'
+Cropping images according to their parent element size. Use the image as a background image on a box element then set the display property as 'flex'
 
 Changing the default font size of the browser using ```:root``` pseudo-class
 
