@@ -77,7 +77,7 @@ body {
   display: block;
   width: 100%;
   min-height: 24rem;
-  background-image: url(/images/drawers.jpg);    
+  background-image: url(images/drawers.jpg);    
   background-position: center center;
   background-size: cover;
 }
