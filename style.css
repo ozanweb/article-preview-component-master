@@ -259,7 +259,7 @@ button[type="button"] {
 
   .img {
     flex: 45%;
-    background-image: url(/images/drawers.jpg);    
+    background-image: url(images/drawers.jpg);    
     background-position: center center;
     background-size: cover;
     border-radius: 1rem 0 0 1rem;
